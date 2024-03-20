@@ -118,9 +118,3 @@ for i, v in pairs(game:GetService("StarterGui"):GetChildren()) do
         v.Enabled = false
     end
 end
-
-for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
-    if v:IsA("ScreenGui") then
-        v.Enabled = false
-    end
-end
