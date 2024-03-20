@@ -57,7 +57,7 @@ local function clearTextures(v)
   elseif v:IsA("MeshPart") then
     v.Transparency = 1
   elseif v:IsA("SpecialMesh")  then
-    v.Transparency = 1
+    v.TextureId = 0
   elseif v:IsA("ShirtGraphic") then
     v.Graphic = 1
   elseif (v:IsA("Shirt") or v:IsA("Pants")) then
