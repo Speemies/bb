@@ -106,15 +106,3 @@ for _, v in pairs(game:GetDescendants()) do
         v.Transparency = 1
     end
 end
-
-for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
-    if v:IsA("ScreenGui") then
-        v.Enabled = false
-    end
-end
-
-for i, v in pairs(game:GetService("StarterGui"):GetChildren()) do
-    if v:IsA("ScreenGui") then
-        v.Enabled = false
-    end
-end
