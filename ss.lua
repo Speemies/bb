@@ -55,11 +55,9 @@ local function clearTextures(v)
   elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
     v.Enabled = false
   elseif v:IsA("MeshPart") then
-    v.Material = "Plastic"
-    v.Reflectance = 0
-    v.TextureID = 10385902758728957
+    v.Transparency = 1
   elseif v:IsA("SpecialMesh")  then
-    v.TextureId = 0
+    v.Transparency = 1
   elseif v:IsA("ShirtGraphic") then
     v.Graphic = 1
   elseif (v:IsA("Shirt") or v:IsA("Pants")) then
